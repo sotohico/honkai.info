@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='css/base.css'>
+</head>
+<body class='bg-gray'>
+    <script src='js/src.js'></script>
+    <script type='text/javascript'>
+        console.log(imgSrc);
+        for (var i = 0 ; i < characterName.length ; i++){
+            //console.log(characterName[i]);
+
+            for (var j = 0 ; j < imgSrc[characterName[i]].portrait.length; j++)
+            {
+                var imgTag = document.createElement('img');
+                imgTag.classList.add('portrait');
+
+                imgTag.classList.add(imgSrc[characterName[i]].types[j]);
+                imgTag.setAttribute('src',imgSrc[characterName[i]].portrait[j] );
+                document.body.appendChild(imgTag);
+            }
+            document.body.appendChild(document.createElement('br'));
+        }
+    </script>
+</body>
+</html>

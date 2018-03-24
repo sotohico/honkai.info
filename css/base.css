@@ -1,0 +1,33 @@
+.bg-gray{
+    background: gray;
+}
+
+.portrait
+{
+    /*width:125px;
+    height:155px;*/
+
+    width:80px;
+    height:120px;
+    padding:0px;
+    margin: 5px;
+    border-radius: 10px;
+    border-left : 3px solid white;
+    border-right : 3px solid white;
+    border-top : 8px solid white;
+    border-bottom : 8px solid white;
+    transform:skewX(-8deg);
+}
+.psychic
+{
+    background : linear-gradient(10deg, rgb(228,170,215), rgb(108,23,131));
+}
+
+.mecha{
+    background : linear-gradient(10deg, rgb(187,255,255), rgb(34,120,187));
+}
+
+.creature
+{
+    background : linear-gradient(10deg, rgb(252,238,133), rgb(199,91,46));
+}
